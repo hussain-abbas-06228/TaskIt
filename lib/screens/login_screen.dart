@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taskit/helpers/database_helper.dart';
+import 'package:taskit/models/task_model.dart';
+import 'package:taskit/screens/add_task_screen.dart';
+import 'package:taskit/screens/todo_list_screen.dart';
 
 class Auth extends StatefulWidget {
   const Auth({Key? key}) : super(key: key);
@@ -166,14 +170,31 @@ class _AuthState extends State<Auth> {
                     color: greenColor,
                     elevation: 4.0,
                     child: Center(
-                        child: Text('LOGIN',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'ProximaNova',
-                              fontWeight: FontWeight.w800,
-                            ))))),
-          ),
-        ],
+                        // child: Text('LOGIN',
+                        //     style: TextStyle(
+                        //       color: Colors.white,
+                        //       fontFamily: 'ProximaNova',
+                        //       fontWeight: FontWeight.w800,
+                        //     )
+                        //     )
+                        child: MaterialButton(
+                      onPressed: () {
+                        if (checkFields()) {
+                          // go to todo_list_screen
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) => TodoListScreen()));
+
+                        }
+                      },
+                      child: Text('LOGIN',
+                          style: TextStyle(color: Colors.white, fontFamily: 'ProximaNova',fontWeight: FontWeight.w800)
+                          ),
+                    )
+                    )
+                    )
+                    ),
+          ),],
+
       ),
     );
   }
