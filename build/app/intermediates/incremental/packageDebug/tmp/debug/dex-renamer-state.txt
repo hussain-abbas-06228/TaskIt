@@ -1,0 +1,4 @@
+#Wed Apr 13 09:07:34 PKT 2022
+base.0=C\:\\Users\\hussa\\OneDrive\\Documents\\GitHub\\TaskIt\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

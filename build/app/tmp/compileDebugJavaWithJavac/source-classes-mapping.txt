@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/koffeecuptales/taskit/BuildConfig.java
+ com.koffeecuptales.taskit.BuildConfig
